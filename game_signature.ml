@@ -4,8 +4,8 @@ sig
 
   (* names the players of the game *)
   type player = 
-    | P1 
-    | P2
+      | P1 
+      | P2
 
   (* expresses the states of the game,
    * i.e., what the board looks like and whose turn it is *)
@@ -53,8 +53,8 @@ sig
   val next_state : state -> move -> state
 
   (* estimates value of a given state
-   * Remember: positive values are better for P1
-   *       and negative values are better for P2 *)
+   * positive values are better for P1
+   * negative values are better for P2 *)
   val estimate_value : state -> float
 
   (* determines whether the game is over or not given a state *)
