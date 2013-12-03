@@ -1,6 +1,8 @@
 connect4module
 ==============
 
+** In order to run -- ensure that all files are located in the ocaml lib directory and run the referee.ml file 
+
 A simple connect 4 module written in OCaml
 
 The game board is represented as a list of lists where each inner list represents a row in the matrix (games should be 
