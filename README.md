@@ -1,9 +1,9 @@
 connect4module
 ==============
 
-** In order to run -- ensure that all files are located in the ocaml lib directory and run the referee.ml file 
+** Update -- Previous files (including game-signature.ml ... referee.ml) are no longer necessary to run the game. Just run the game.ml file with OCaml.
 
-A simple connect 4 module written in OCaml
+A simple implementation of connect 4 in OCaml
 
 The game board is represented as a list of lists where each inner list represents a row in the matrix (games should be 
 be played on a minimum board of 4 inner lists each of which has length 4).
@@ -37,10 +37,9 @@ in every possible diagonal being checked at each step in the game. The game is o
 4-in a row. To check this, the procedure check4 is run on the list returned by either check-diagonals, check-rows, or 
 check-columns. 
 
-Potential for Increasing Efficiency
+AI:
 
-One way to make the checking procedures more efficient is to crop the board to the smallest possible rectangle conatining
-all non-vacant entries at every turn after the 7th move (as this is the first time that either player can win the game.
+The AI is a minimax algorithm that searches a game tree of depth 5 at each game-state. The tree is not pruned, thus increasing the depth-search above 5 (default value) is not advised. 
 
 
 
