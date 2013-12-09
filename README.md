@@ -1,4 +1,4 @@
-connect4module
+connect4 module
 ==============
 
 ** Update -- Previous files (including game-signature.ml ... referee.ml) are no longer necessary to run the game. Just run the game.ml file with OCaml.
